@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Elements Reference - Massively by HTML5 UP</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <a href="elements5.html" class="logo">WEBSITE Scraping with Beautiful Soup</a>
+        </header>
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul class="links">
+
+            </ul>
+            <ul class="icons">
+
+                <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Post -->
+            <section class="post">
+
+
+                <!-- Text stuff -->
+                <h2>Description</h2>
+                <p>This was probably the most fun recent project I've worked on. I followed a tutorial (credits to TechWithTim) that finds the cheapest computer products on Newegg, the online shopping store.
+                    My original goal was to find the cheapest 3080 graphics cards on the market, but this program also works for other products as well! But this is pretty much similar to any website scraper out there, I just wanted to implement something useful while practicing my python skills at the same time.
+                A Website Scraper essentially parses an HTML file and extracts certain information from it. In this case, it will gather a collection of the cheapest products and provide the price and the link! </p>
+
+                <h2>Procedure</h2>
+                <img src="images/3080_2.PNG" alt="" />
+                <p>This is how a page from Newegg looks like, we want to extract certain information from
+                it, such as the price, product name, and page numbers (since the program will need to find the cheapest price among all products).
+                </p>
+
+
+                <h2>HTML tags that contain the information we want</h2>
+                <img src="images/Tag.PNG" alt="" />
+                <p>For example, we can see that the name of this specific product is located within HTML tags with a specific name. Beautiful Soup allows us to search for those tags.
+                </p>
+                
+
+                
+                <h2>Code</h2>
+                <img src="images/code.PNG" alt="" />
+                <p>We start off by pasting the exact link used when searching for a product. Then we input this url into the BeautifulSoup module that will parse the html so we can look for specific tags.
+                    Next, we get the number of pages that a product has. By using Google Chrome's inspect function, we discover that the number of pages can be found under the class name "list-tool-pagination-text". Once we 
+                    extract the number of pages, we also find the specific product's parent tag by using the find or find_all function. Once these tags were found, all that was left was to sort them and print them out in a list 
+                    that will be organized in descending order, which shows the cheapest products at the top of the list!
+
+                
+                </p>
+
+                <h2>Searching for Cheapest 3080 graphics card</h2>
+                <img src="images/products1.PNG" alt="" />
+                <p>At this point in time, we can see that the cheapest 3080 on Newegg is still over $2,000!</p>
+
+                <h2>Link</h2>
+                <img src="images/link1.PNG" alt="" />
+                <p>The program also comes with the given clickable link!</p>
+
+
+
+                
+
+                <!-- Table -->
+
+
+
+                <!-- Image -->
+                
+
+                <!-- Box -->
+
+
+                <!-- Preformatted Code -->
+               
+                
+            </section>
+
+        </div>
+
+        <!-- Footer -->
+
+
+        <!-- Copyright -->
+        <div id="copyright">
+            <ul>
+                <li>&copy; Untitled</li>
+                <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
